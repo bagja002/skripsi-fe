@@ -232,7 +232,7 @@ function Desktop1() {
       const encryptedImage = event.target.result.split(",")[1]; // Get the Base64 data
 
       axios
-        .post("http://45.9.188.219:5000/upload", { encryptedImage })
+        .post("http://skripsi-bagja.ikulatluh.cloud/upload", { encryptedImage })
         .then((response) => {
           console.log(
             "Image uploaded and encrypted successfully:",
