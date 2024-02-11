@@ -232,7 +232,7 @@ function Desktop1() {
       const encryptedImage = event.target.result.split(",")[1]; // Get the Base64 data
 
       axios
-        .post("http://localhost:5000/upload", { encryptedImage })
+        .post("http://127.0.0.1:5000/upload", { encryptedImage })
         .then((response) => {
           console.log(
             "Image uploaded and encrypted successfully:",
